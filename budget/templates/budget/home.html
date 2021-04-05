@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+{%extends 'budget/base.html'%}
+{%block body_block%}
+<h1>WELCOME USER {{request.user}}</h1>
+<a href="{%url 'signout'%}">{{request.user}}Logout</a>
+{%endblock%}
